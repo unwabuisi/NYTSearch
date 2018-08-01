@@ -1,0 +1,29 @@
+.listing {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.sublisting {
+    display: inline-block;
+    margin: 15px;
+    padding: 8px;
+    border-radius: 15px;
+    color: white;
+    background-color: #777777;
+}
+
+.snippet {
+    font-style: italic;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+.label {
+    font-size: 23px;
+}
+
+a {
+    color: #000 !important;
+}
