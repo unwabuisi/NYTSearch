@@ -4,7 +4,7 @@
 
 $(document).ready(function() {
     var APIKey = "34a08de94c4f43289ccb389b947ebf13";
-    var queryURLBase = "http://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=" + APIKey;
+    var queryURLBase = "https://api.nytimes.com/svc/search/v2/articlesearch.json?api-key=" + APIKey;
     var startYear = "";
     var endYear = "";
 
@@ -52,7 +52,7 @@ $(document).ready(function() {
             url:queryURLBase + "&q=" + query + "&begin_date=" + startYear + "&end_date=" + endYear,
             method:"GET",
         }).done(function (NYTResults) {
-            // console.log(queryURLBase + "&q=" + query);
+            console.log(queryURLBase + "&q=" + query);
             var data = NYTResults.response.docs;
             // console.log(data);
             for (var i = 0; i < numOfResults; i++){
